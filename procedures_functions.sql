@@ -1,3 +1,5 @@
+
+CREATE DATABASE IF NOT EXISTS LibraryDB;
 USE LibraryDB;
 
 DELIMITER //
@@ -23,3 +25,5 @@ BEGIN
 END//
 DELIMITER;
 
+CALL GetMemberLoans(1);
+SELECT CountBookLoans(2);
